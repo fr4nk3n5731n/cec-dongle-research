@@ -5,6 +5,7 @@
 * [Test Devices](#test_devices) : devices used for testing functionality
 * [USB-C to HDMI](#usbctohdmi) : USB-C to HDMI dongles
 * [USB-C Dock](#usbcdock) : USB-C to multiple different downstream ports, commonly referred to as "docks" or "hubs"
+* [DP to HDMI adapters](#cableadapter) : DisplayPort (DP) to HDMI adapters/adapter cables
 
 
 > [!TIP]
@@ -34,8 +35,10 @@
 
 <a id="test_device_framework"></a>
 **Framework 14 AMD**
+- OS: Arch Linux
 - USB: USB4
-- CPU: AMD Ryzen
+- CPU: AMD Ryzen 5 7640U
+- GPU: AMD Radeon 760M
 
 <a id="test_device_usb4_dock_ab"></a>
 **Amazon Basics Thunderbolt 4/USB 4 Pro Docking Station**
@@ -45,6 +48,10 @@
 - USB-A: 3x USB 10Gb/s
 - HDMI: HDMI 2.1
 - Does **not** support CEC on its own, but can be used to test and verify the functionality of external USB-C to HDMI adapters
+
+<a id="test_device_lenovo_m720q"></a>
+**Lenovo ThinkCentre M720q**
+- OS: Arch Linux
 
 ---
 ## USB-C Dongles
@@ -70,6 +77,11 @@
 ---
 <a id="cableadapter"></a>
 ## DP to HDMI adapters - working
+| Manufacturer | Name                                                                                            | Model | IC                                             | Host Connection | Downstream Connections                                         | Supports CEC       | Picture                                      | Max Res & Hz       | Notes                                                                                                                             |
+|--------------|-------------------------------------------------------------------------------------------------|-------|------------------------------------------------|-----------------|----------------------------------------------------------------|--------------------|----------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| UGREEN       | UGREEN 8K 60Hz Displayport to HDMI Adapter | DP134 | [?](#legend_qst)     | DP 1.4          | HDMI 2.1 | 🟢 | ![sabrent_ds-sd6p](images/ugreen_dp134.jpeg) | [TBD](#legend_tbd) | Seems to crash or at least freeze the GPU driver on the Framework when using the Framework DP gen 2 module. Works fine with M720q |
+
+## DP to HDMI adapters - non-working
 | Manufacturer  | Name                                                                                            | Model                 | IC                                             | Host Connection | Downstream Connections                                 | Supports CEC       | Picture                                                               | Max Res & Hz                       | Notes |
 |---------------|-------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------|-----------------|--------------------------------------------------------|--------------------|-----------------------------------------------------------------------|------------------------------------|-------|
 
@@ -89,7 +101,7 @@
 | Sabrent | 6-Port Docking Station for Steam Deck and USB C Devices | DS-SD6P | [?](#legend_qst)     | USB-C           | HDMI 2.0 (DP-Alt), 3x USB-A 3.0, 1x USB-C 3.0, USB-C PD IN 95W | ❌ | ![sabrent_ds-sd6p](images/sabrent_ds-sd6p.jpeg) | 4k60 Steam Deck LCD | Dock firmware update required to be OLED compatible. Updater is windows only. Official download link is dead, support sent a google-drive link. |
 
 
-### USB-C Dock - untested 
+### USB-C Dock - untested (for docks I plan on testing)
 | Manufacturer  | Name                                                                                            | Model                 | IC                 | Host Connection | Downstream Connections                                     | Supports CEC       | Picture                                         | Max Res & Hz                       | Notes |
 |---------------|-------------------------------------------------------------------------------------------------|-----------------------|--------------------|-----------------|------------------------------------------------------------|--------------------|-------------------------------------------------|------------------------------------|-------|
 
