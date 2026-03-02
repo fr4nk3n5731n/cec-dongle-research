@@ -76,12 +76,13 @@
 
 ---
 <a id="cableadapter"></a>
-## DP to HDMI adapters - working
+## DP to HDMI adapters
+### DP to HDMI adapters - working
 | Manufacturer | Name                                                                                            | Model | IC                                             | Host Connection | Downstream Connections                                         | Supports CEC       | Picture                                      | Max Res & Hz       | Notes                                                                                                                             |
 |--------------|-------------------------------------------------------------------------------------------------|-------|------------------------------------------------|-----------------|----------------------------------------------------------------|--------------------|----------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | UGREEN       | UGREEN 8K 60Hz Displayport to HDMI Adapter | DP134 | [?](#legend_qst)     | DP 1.4          | HDMI 2.1 | 🟢 | ![sabrent_ds-sd6p](images/ugreen_dp134.jpeg) | [TBD](#legend_tbd) | Seems to crash or at least freeze the GPU driver on the Framework when using the Framework DP gen 2 module. Works fine with M720q |
 
-## DP to HDMI adapters - non-working
+### DP to HDMI adapters - non-working
 | Manufacturer  | Name                                                                                            | Model                 | IC                                             | Host Connection | Downstream Connections                                 | Supports CEC       | Picture                                                               | Max Res & Hz                       | Notes |
 |---------------|-------------------------------------------------------------------------------------------------|-----------------------|------------------------------------------------|-----------------|--------------------------------------------------------|--------------------|-----------------------------------------------------------------------|------------------------------------|-------|
 
