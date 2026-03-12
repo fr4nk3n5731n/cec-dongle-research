@@ -15,7 +15,7 @@
 >
 > <a id="legend_tbd"></a>
 > `TBD` = "To be done", a dataset that still has to be added, and can be done so with little to no effort or is just
-> for a sample to arrive
+> waiting for a sample to arrive
 >
 > <a id="legend_qst"></a>
 > `?` = "Unknown", a dataset which is unknown and requires more effort to retrieve
